@@ -15,7 +15,7 @@ class App extends Component {
 
 
   getEmissionsCount = () => {
-    var root_url = 'http://hidden-basin-30200.herokuapp.com/emissions_count';
+    var root_url = 'https://hidden-basin-30200.herokuapp.com/emissions_count';
     return fetch(root_url, {
       method: 'GET',
       headers: {

@@ -21,7 +21,7 @@ class Emissions extends Component {
   getEmissions = () => {
     console.log("from getEmissions =>" + this.state.sorted)
     this.setState({loading: true})
-    var root_url = 'http://hidden-basin-30200.herokuapp.com/emissions?sorted=' + this.state.sorted;
+    var root_url = 'https://hidden-basin-30200.herokuapp.com/emissions?sorted=' + this.state.sorted;
     return fetch(root_url, {
       method: 'GET',
       headers: {
